@@ -1,26 +1,25 @@
-name: Generate Snake
+name: generate snake
 
 on:
   schedule:
-    - cron: "0 0 * * *"  # 毎日深夜に実行
-  workflow_dispatch:      # 手動でも実行可能
+    - cron: "0 0 * * *"
+  workflow_dispatch:
 
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      # これがないと .git がないので commit できない
       - name: Checkout repository
         uses: actions/checkout@v2
-              
-      - name: generate snake.svg
+
+      - name: Generate snake.svg
         uses: Platane/snk/svg-only@v3
         with:
           github_user_name: yutonomu
           outputs: |
             dist/snake.svg
-      
-      - name: push snake.svg to the output branch
+
+      - name: Push snake.svg to output branch
         uses: crazy-max/ghaction-github-pages@v3.1.0
         with:
           target_branch: output
