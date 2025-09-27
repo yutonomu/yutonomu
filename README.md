@@ -56,6 +56,12 @@
 
 ---
 
+## 🎧 Recently Played
+
+![Recently Played](https://github.com/yutonomu/yutonomu/blob/output/recent.svg)
+
+---
+
 ## 🌐 Connect with me
 
 [![X](https://img.shields.io/badge/X-000000?logo=x&logoColor=white)](https://x.com/yutonomun)
