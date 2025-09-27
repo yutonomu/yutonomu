@@ -31,7 +31,7 @@
 ## 🔮 今日の開運おみくじ
 
 ✨ 今日のあなたの運勢は…  
-（ここに後でランダムおみくじAPIを埋め込めるよ 🎲）
+![omikuji](https://omikuji-api-ten.vercel.app/api/omikuji)
 
 ---
 
