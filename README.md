@@ -46,7 +46,7 @@
 ---
 
 ## 🌐 Visitor Map
-[![Visitor Map](https://www.clustrmaps.com/map_v2.png?d=YOUR_HASH&w=600)](https://yutonomu.github.io/visitors/)
+![Visitor Count](https://komarev.com/ghpvc/?username=yutonomu&color=blue&style=flat)
 
 ---
 
