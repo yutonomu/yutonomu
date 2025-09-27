@@ -46,7 +46,8 @@
 ---
 
 ## 🌐 Visitor Map
-![Visitor Map](https://visitcount.itsvg.in/api?id=yutonomu&label=Profile%20Views&color=12&icon=5&pretty=true)
+![Visitor Map](https://raw.githubusercontent.com/yutonomu/yutonomu/output/visitor-map.svg)
+
 
 ---
 
