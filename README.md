@@ -24,7 +24,7 @@
 
 ## 🎮 Fun Zone
 
-![Snake animation](https://github.com/yutonomu/yutonomu/blob/output/dist/snake.svg)
+![Snake animation](https://github.com/yutonomu/yutonomu/blob/output/snake.svg)
 
 ---
 
