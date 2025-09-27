@@ -58,7 +58,7 @@
 
 ## 🎧 Recently Played
 
-![Recently Played](https://raw.githubusercontent.com/yutonomu/yutonomu/output/recent.svg)
+![Recently Played](https://yutonomu.vercel.app/api/lastfm-recent)
 
 ---
 
