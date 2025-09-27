@@ -1,0 +1,28 @@
+name: Update Recent Tracks
+
+on:
+  schedule:
+    - cron: "0 * * * *"  # 毎時実行
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Fetch recent tracks from Last.fm
+        run: |
+          mkdir -p dist
+          curl "http://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=YOUR_USERNAME&api_key=${{ secrets.LASTFM_API_KEY }}&format=json&limit=5" \
+          | jq -r '.recenttracks.track[] | "\(.artist.#text) - \(.name)"' \
+          | awk '{print NR ". " $0}' \
+          | sed '1i<svg xmlns="http://www.w3.org/2000/svg" width="800" height="120"><rect width="100%" height="100%" fill="black"/><g fill="lime" font-family="monospace" font-size="14">' \
+          | sed '$a</g></svg>' > dist/recent.svg
+
+      - name: Deploy SVG to output branch
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_branch: output
+          publish_dir: ./dist
