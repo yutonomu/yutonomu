@@ -1,4 +1,4 @@
-export default async function handler(req: VercelRequest, res: VercelResponse) {
+export default async function handler(req: any, res: any) {
   const username = process.env.LASTFM_USERNAME;
   const apiKey = process.env.LASTFM_API_KEY;
 
@@ -11,12 +11,7 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
   const response = await fetch(url);
   const data = await response.json();
 
-  if (!data.recenttracks?.track) {
-    res.status(500).send("No tracks found. Check API key and username.");
-    return;
-  }
-
-  const tracks = data.recenttracks.track;
+  const tracks = data.recenttracks?.track || [];
   const items = tracks.map((t: any, i: number) =>
     `${i + 1}. ${t.artist["#text"]} - ${t.name}`
   );
