@@ -1,6 +1,6 @@
-export default async function handler(req: any, res: any) {
-  const username = process.env.LASTFM_USERNAME as string;
-  const apiKey = process.env.LASTFM_API_KEY as string;
+export default async function handler(req, res) {
+  const username = process.env.LASTFM_USERNAME;
+  const apiKey = process.env.LASTFM_API_KEY;
 
   if (!username || !apiKey) {
     res.status(500).send("Missing LASTFM_USERNAME or LASTFM_API_KEY");
@@ -12,9 +12,7 @@ export default async function handler(req: any, res: any) {
   const data = await response.json();
 
   const tracks = data.recenttracks?.track || [];
-  const items = tracks.map((t: any, i: number) =>
-    `${i + 1}. ${t.artist["#text"]} - ${t.name}`
-  );
+  const items = tracks.map((t, i) => `${i + 1}. ${t.artist["#text"]} - ${t.name}`);
 
   const svg = `
 <svg xmlns="http://www.w3.org/2000/svg" width="800" height="140">
