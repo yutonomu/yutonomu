@@ -25,7 +25,7 @@
 ## 🎮 Fun Zone
 
 <!-- 正しいSnakeアニメーションの埋め込み -->
-![Snake animation](https://github.com/yutonomu/yutonomu/blob/output/github-contribution-grid-snake.svg)
+![Snake animation](https://github.com/yutonomu/yutonomu/blob/output/snake.svg)
 
 ---
 
@@ -38,8 +38,8 @@
 
 ## 🌐 Connect with me
 
-[![Twitter](https://img.shields.io/badge/Twitter-1DA1F2?logo=twitter&logoColor=white)](https://twitter.com/YOUR_TWITTER)
-[![Qiita](https://img.shields.io/badge/Qiita-55C500?logo=qiita&logoColor=white)](https://qiita.com/YOUR_QIITA)
+[![Twitter](https://img.shields.io/badge/Twitter-1DA1F2?logo=twitter&logoColor=white)](https://twitter.com/yutonomun)
+[![Qiita](https://img.shields.io/badge/Qiita-55C500?logo=qiita&logoColor=white)](https://qiita.com/yutonomu)
 
 ---
 
