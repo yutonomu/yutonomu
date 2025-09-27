@@ -51,8 +51,8 @@
 ---
 
 ## 👾 Retro Arcade
-
-🎮 [Play Retro Tetris](https://yutonomu.github.io/retro-arcade/)  
+ 
+👾 [Play Breakout](https://yutonomu.github.io/retro-arcade)
 
 ---
 
