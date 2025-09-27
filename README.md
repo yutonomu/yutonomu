@@ -22,6 +22,16 @@
 
 ---
 
+## 🌱 Streak Stats
+![GitHub Streak](https://streak-stats.demolab.com?user=yutonomu&theme=tokyonight&hide_border=true)
+
+---
+
+## 🎨 Activity Graph
+![GitHub Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=yutonomu&theme=tokyo-night)
+
+---
+
 ## 🎮 Fun Zone
 
 ![Snake animation](https://github.com/yutonomu/yutonomu/blob/output/snake.svg)
@@ -32,6 +42,17 @@
 
 ✨ 今日のあなたの運勢は…  
 ![omikuji](https://omikuji-api-ten.vercel.app/api/omikuji)
+
+---
+
+## 🌐 Visitor Map
+![Visitor Map](https://visitcount.itsvg.in/api?id=yutonomu&label=Profile%20Views&color=12&icon=5&pretty=true)
+
+---
+
+## 👾 Retro Arcade
+
+🎮 [Play Retro Tetris](https://<your-vercel-or-pages-url>/tetris)  
 
 ---
 
