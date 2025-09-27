@@ -1,0 +1,21 @@
+name: Generate Snake
+
+on:
+  schedule:
+    - cron: "0 0 * * *"  # 毎日深夜に実行
+  workflow_dispatch:      # 手動実行も可
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: Platane/snk@master
+        with:
+          github_user_name: yutonomu
+          outputs: dist/snake.svg
+      - name: Push snake.svg to the output branch
+        uses: EndBug/add-and-commit@v9
+        with:
+          branch: output
+          message: "Generate snake"
+          add: "dist/snake.svg"
