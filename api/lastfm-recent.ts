@@ -1,29 +1,28 @@
 import type { VercelRequest, VercelResponse } from '@vercel/node';
-import fetch from 'node-fetch';
 
 export default async function handler(req: VercelRequest, res: VercelResponse) {
-  const username = "YOUR_LASTFM_USERNAME";
-  const apiKey = "YOUR_LASTFM_API_KEY";
+  const username = process.env.LASTFM_USERNAME;
+  const apiKey = process.env.LASTFM_API_KEY;
 
   const url = `http://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=${username}&api_key=${apiKey}&format=json&limit=5`;
 
-  const data = await fetch(url).then(r => r.json());
-  const tracks = data.recenttracks.track;
+  const response = await fetch(url);
+  const data = await response.json();
+  const tracks = data.recenttracks?.track || [];
 
-  let items = tracks.map((t: any, i: number) => 
-    `${i+1}. ${t.artist["#text"]} - ${t.name}`
-  ).join(" | ");
+  const items = tracks.map((t: any, i: number) =>
+    `${i + 1}. ${t.artist["#text"]} - ${t.name}`
+  );
 
   const svg = `
-<svg xmlns="http://www.w3.org/2000/svg" width="800" height="40">
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="140">
   <rect width="100%" height="100%" fill="black"/>
-  <text x="10" y="25" font-size="14" fill="lime" font-family="monospace">
-    🎧 Recently played: ${items}
-  </text>
-</svg>
-`;
+  <g fill="lime" font-family="monospace" font-size="14">
+    ${items.map((line, i) => `<text x="10" y="${25 + i * 20}">${line}</text>`).join("")}
+  </g>
+</svg>`;
 
-  res.setHeader("Content-Type", "image/svg+xml");
+  res.setHeader("Content-Type", "image/svg+xml; charset=utf-8");
   res.setHeader("Cache-Control", "no-store");
-  res.send(svg);
+  res.status(200).send(svg);
 }
