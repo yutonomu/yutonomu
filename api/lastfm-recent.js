@@ -1,4 +1,5 @@
 export default async function handler(req, res) {
+  console.log("hogehoge");
   const username = process.env.LASTFM_USERNAME;
   const apiKey = process.env.LASTFM_API_KEY;
 
