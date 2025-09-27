@@ -1,16 +1,46 @@
-## Hi there 👋
+# Hi there, I'm yutonomu 👋
 
-<!--
-**yutonomu/yutonomu** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+![Typing SVG](https://readme-typing-svg.herokuapp.com?color=%2336BCF7&lines=Welcome+to+my+GitHub!;I+love+coding+💻;Exploring+new+tech+🚀;Building+fun+projects+🎨)
 
-Here are some ideas to get you started:
+---
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+## 🛠 Tech Stack
+
+![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white)
+![Swift](https://img.shields.io/badge/Swift-FA7343?logo=swift&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=white)
+![React](https://img.shields.io/badge/React-61DAFB?logo=react&logoColor=black)
+![Next.js](https://img.shields.io/badge/Next.js-000000?logo=next.js&logoColor=white)
+
+---
+
+## 📊 GitHub Stats
+
+![GitHub stats](https://github-readme-stats.vercel.app/api?username=yutonomu&show_icons=true&theme=radical)
+
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=yutonomu&layout=compact&theme=radical)
+
+---
+
+## 🎮 Fun Zone
+
+<!-- 正しいSnakeアニメーションの埋め込み -->
+![Snake animation](https://github.com/yutonomu/yutonomu/blob/output/github-contribution-grid-snake.svg)
+
+---
+
+## 🔮 今日の開運おみくじ
+
+✨ 今日のあなたの運勢は…  
+（ここに後でランダムおみくじAPIを埋め込めるよ 🎲）
+
+---
+
+## 🌐 Connect with me
+
+[![Twitter](https://img.shields.io/badge/Twitter-1DA1F2?logo=twitter&logoColor=white)](https://twitter.com/YOUR_TWITTER)
+[![Qiita](https://img.shields.io/badge/Qiita-55C500?logo=qiita&logoColor=white)](https://qiita.com/YOUR_QIITA)
+
+---
+
+💡 Thanks for visiting my profile! May good luck be with you 🍀
