@@ -58,9 +58,7 @@
 
 ## 🎧 Recently Played
 
-![Recently Played](https://github.com/yutonomu/yutonomu/blob/output/recent.svg)
 ![Recently Played](https://raw.githubusercontent.com/yutonomu/yutonomu/output/recent.svg)
-
 
 ---
 
