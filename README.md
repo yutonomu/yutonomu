@@ -52,7 +52,7 @@
 
 ## 👾 Retro Arcade
 
-🎮 [Play Retro Tetris](https://<your-vercel-or-pages-url>/tetris)  
+🎮 [Play Retro Tetris](https://yutonomu.github.io/retro-arcade/)  
 
 ---
 
