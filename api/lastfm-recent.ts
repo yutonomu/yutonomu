@@ -1,6 +1,6 @@
 export default async function handler(req: any, res: any) {
-  const username = process.env.LASTFM_USERNAME;
-  const apiKey = process.env.LASTFM_API_KEY;
+  const username = process.env.LASTFM_USERNAME as string;
+  const apiKey = process.env.LASTFM_API_KEY as string;
 
   if (!username || !apiKey) {
     res.status(500).send("Missing LASTFM_USERNAME or LASTFM_API_KEY");
