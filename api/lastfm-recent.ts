@@ -1,15 +1,22 @@
-import type { VercelRequest, VercelResponse } from '@vercel/node';
-
 export default async function handler(req: VercelRequest, res: VercelResponse) {
   const username = process.env.LASTFM_USERNAME;
   const apiKey = process.env.LASTFM_API_KEY;
 
-  const url = `http://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=${username}&api_key=${apiKey}&format=json&limit=5`;
+  if (!username || !apiKey) {
+    res.status(500).send("Missing LASTFM_USERNAME or LASTFM_API_KEY");
+    return;
+  }
 
+  const url = `http://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=${username}&api_key=${apiKey}&format=json&limit=5`;
   const response = await fetch(url);
   const data = await response.json();
-  const tracks = data.recenttracks?.track || [];
 
+  if (!data.recenttracks?.track) {
+    res.status(500).send("No tracks found. Check API key and username.");
+    return;
+  }
+
+  const tracks = data.recenttracks.track;
   const items = tracks.map((t: any, i: number) =>
     `${i + 1}. ${t.artist["#text"]} - ${t.name}`
   );
