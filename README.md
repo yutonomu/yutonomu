@@ -31,6 +31,8 @@
 ## 🔮 今日の開運おみくじ
 
 ✨ 今日のあなたの運勢は…  
+![Typing SVG](https://readme-typing-svg.herokuapp.com?color=%23F7A41D&lines=おみくじをシャッフル中...;結果は...？！)
+
 ![omikuji](https://omikuji-api-ten.vercel.app/api/omikuji)
 
 ---
