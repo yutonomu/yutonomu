@@ -26,3 +26,7 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_branch: output
           publish_dir: ./dist
+    
+      - name: Debug Last.fm response
+        run: |
+          curl -s "http://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=YOUR_USERNAME&api_key=${{ secrets.LASTFM_API_KEY }}&format=json&limit=2" | jq .
