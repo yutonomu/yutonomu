@@ -45,7 +45,7 @@
 
 ---
 
-## 🌐 Visitor Map
+## 🌐 Visitor Count
 ![Visitor Count](https://komarev.com/ghpvc/?username=yutonomu&color=blue&style=flat)
 
 ---
